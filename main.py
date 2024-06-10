@@ -51,6 +51,8 @@ totals_by_category = calculate_total_by_category(Category, SpentAmount)
 for category, total in totals_by_category.items():
     print(f"Total spent on {category}: ${total:.2f}")
 
+    print(f"Total spent on {category} per month: ${total/5:.2f}")
+
 # Print total and average spent amount (optional)
 print(f"Total spent amount: ${calculate_total(SpentAmount):.2f}")
 print(f"Average spent amount: ${calculate_avg(SpentAmount):.2f}")
